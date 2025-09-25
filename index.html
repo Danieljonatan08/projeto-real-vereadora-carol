@@ -1,15 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vereadora Carol</title>
-    <link rel="stylesheet" href="/src/styles/style-home.css">
-    s
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/src/styles/style-home.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="/src/images/logo.png" alt="" /></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Indicações e Projetos</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="heroSection">
+      <div class="banner">
+        <video autoplay muted loop>
+          <source src="/src/videos/IMG_6719.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
+        <div class="contentMain">
+          <h1>Porto Grande merece mais. E juntos, vamos fazer acontecer.</h1>
+          <button>Conheça Carol</button>
+          <button>Veja as ações</button>
+        </div>
+      </div>
+    </main>
+    <section class="quemSouEu">
+      <div class="imagemQuemSouEu">
+        <img
+          src="/src/images/hero.jpg"
+          alt="Varias imagens da vereadora Carol"
+        />
+      </div>
+
+      <div class="trajetoria">
+        <h2>Quem Sou Eu</h2>
+        <h3>Educadora. Mãe. Líder comunitária. Voz ativa por Porto Grande.</h3>
+        <p>
+          Carol Monteiro nasceu e cresceu em Porto Grande. Com dedicação à
+          educação e à comunidade, construiu uma trajetória marcada por empatia,
+          coragem e resultados.
+        </p>
+        <div class="linhaDoTempo">
+          <img src="/src/images/timeLine.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="acoesEcompromissos">
+      <div class="trabalhoDePerto"><h2>Trabalho de Perto</h2></div>
+      <div class="liderancaComResultados">
+        <h2>Liderança com Resultados</h2>
+      </div>
+      <div class="compromissoComPorto">
+        <h2>Compromisso com Porto Grande</h2>
+      </div>
+    </section>
+    <section class="comunidadeFala">
+      <div class="depoimento">
+        <img src="" alt="" />
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="depoimento">
+        <img src="" alt="" />
+        <h2></h2>
+        <p></p>
+      </div>
+      <div class="depoimento">
+        <img src="" alt="" />
+        <h2></h2>
+        <p></p>
+      </div>
+    </section>
+    <section class="formulario">
+      <label for="Nome">* Nome</label>
+      <input required type="text" name="Nome da pessoa" id="" />
+      <label for="whatsapp">* Celular (Whatsapp)</label>
+      <input required type="number" name="numero de celular" id="" />
+      <label for="assunto"> *Assunto</label>
+      <input type="text" name="assunto" id="" />
+      <label for="mensagem">*Mensagem</label>
+      <textarea name="mensagem" id=""></textarea>
+      <button type="submit">Enviar</button>
+    </section>
+    <footer>
+      <p>Carol Monteiro - Liderança com propósito</p>
+      <div class="redesSociais">
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </footer>
 
     <script src="/src/scripts/script.js"></script>
-</body>
+  </body>
 </html>
