@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -75,7 +81,6 @@
           trabalho, agora é a hora de acompanhar de perto. Porto Grande está
           mudando. E Carol está na linha de frente.
         </p>
-        
       </div>
     </section>
     <section class="acoesEcompromissos container-cards2">
@@ -109,39 +114,78 @@
         <a href="#compromisso" class="btn">Saiba mais</a>
       </div>
     </section>
-
     <section class="comunidadeFala">
       <h2>Comunidade Fala</h2>
       <div class="container-cards">
         <div class="depoimento">
-          <img src="" alt="" />
-          <h2>Dona maria</h2>
-          <p></p>
+          <div class="container-image img1"></div>
+          <h4>
+            “A Carol é presente. Ela não manda recado, ela vem pessoalmente.”
+          </h4>
+          <p>— Luciana, mãe e moradora do bairro Aeroporto</p>
         </div>
         <div class="depoimento">
-          <h2>Seu José</h2>
-          <img src="" alt="" />
-          <h2></h2>
-          <p></p>
+          <div class="container-image img2"></div>
+          <h4>
+            “Com ela, nossas reivindicações viram ação. Nunca vi uma vereadora
+            tão ativa.”
+          </h4>
+          <p>— Carlos, agricultor da zona rural</p>
         </div>
         <div class="depoimento">
-          <h2>Seu João</h2>
-          <img src="" alt="" />
-          <h2></h2>
-          <p></p>
+          <div class="container-image img3"></div>
+          <h4>“Ela escuta até os mais jovens. Isso dá esperança pra gente.”</h4>
+          <p>— Rafael, estudante do ensino médio</p>
         </div>
+        <div class="depoimento">
+          <div class="container-image img4"></div>
+          <h4>“Ela escuta até os mais jovens. Isso dá esperança pra gente.”</h4>
+          <p>— Rafael, estudante do ensino médio</p>
+        </div>
+      
       </div>
     </section>
+
     <section class="formulario">
-      <label for="Nome">* Nome</label>
-      <input required type="text" name="Nome da pessoa" id="" />
-      <label for="whatsapp">* Celular (Whatsapp)</label>
-      <input required type="number" name="numero de celular" id="" />
-      <label for="assunto"> *Assunto</label>
-      <input type="text" name="assunto" id="" />
-      <label for="mensagem">*Mensagem</label>
-      <textarea name="mensagem" id=""></textarea>
-      <button type="submit">Enviar</button>
+      <div class="container-contato">
+        <h2>Contato</h2>
+        <p>
+          Use o formulário ao lado para enviar suas reivindicações, solicitar
+          uma visita ou apresentar indicações. Sua voz é importante para nós!
+        </p>
+      </div>
+      <form action="">
+        <label for="Nome">* Nome</label>
+        <input
+          placeholder="Digite seu nome aqui"
+          required
+          type="text"
+          name="Nome da pessoa"
+          id=""
+        />
+        <label for="whatsapp">* Celular (Whatsapp)</label>
+        <input
+          placeholder="Ex: 96991000000"
+          required
+          type="number"
+          name="numero de celular"
+          id=""
+        />
+        <label for="assunto"> *Assunto</label>
+        <input
+          placeholder="O que está pensando agora?"
+          type="text"
+          name="assunto"
+          id=""
+        />
+        <label for="mensagem">*Mensagem</label>
+        <textarea
+          placeholder="Digite sua mensagem aqui"
+          name="mensagem"
+          id=""
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <footer>
