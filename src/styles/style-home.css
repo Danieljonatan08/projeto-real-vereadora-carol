@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-body, html{
+body,
+html {
   height: 100%;
-  
 }
+
 
 header {
   position: relative;
@@ -80,10 +80,6 @@ header {
   pointer-events: none;
 }
 
-
-
-
-
 .banner {
   position: relative;
   width: 100%;
@@ -115,8 +111,6 @@ header {
   z-index: 0;
 }
 
-
-
 .contentMain {
   position: relative;
   z-index: 1;
@@ -128,6 +122,16 @@ header {
   max-width: 540px;
   align-items: center;
   justify-content: center;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
 }
 
 button {
@@ -170,10 +174,6 @@ button:active {
 }
 
 
-
-
-
-
 .imagemQuemSouEu img {
   border-radius: 30px;
   max-width: 1280px;
@@ -181,19 +181,15 @@ button:active {
   position: relative;
   z-index: 20;
   margin-top: -70px; /* sobreposição mais suave */
-  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.40); /* sombra difusa */
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4); /* sombra difusa */
   transition: all 0.6s ease;
 }
-
-
-
 
 .trajetoria {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  
 }
 
 .quemSouEu .trajetoria h2 {
@@ -215,14 +211,13 @@ button:active {
   text-align: center;
   width: 800px;
   font-size: 1.2rem;
- 
 }
 .quemSouEu .trajetoria {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
-.linhaDoTempo img{
+.linhaDoTempo img {
   width: 250px;
   height: 200px;
   opacity: 0.6;
@@ -231,9 +226,9 @@ button:active {
 .acoesEcompromissos {
   display: flex;
   flex-wrap: wrap;
-  gap: 15rem;
-  justify-content: center;
-  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem 2rem;
   background-color: #f9fbfc;
 }
 
@@ -255,15 +250,15 @@ button:active {
 
 /* Imagens de fundo para cada card */
 .trabalhoDePerto .container-img {
-  background-image: url('/src/images/trabalhoDePerto.jpg');
+  background-image: url("/src/images/trabalhoDePerto.jpg");
 }
 
 .liderancaComResultados .container-img {
-  background-image: url('/src/images/lideranca.jpg');
+  background-image: url("/src/images/lideranca.jpg");
 }
 
 .compromissoComPorto .container-img {
-  background-image: url('/src/images/compromisso.jpg');
+  background-image: url("/src/images/compromisso.jpg");
 }
 
 /* Estilo da imagem */
@@ -278,6 +273,10 @@ button:active {
 }
 
 /* Títulos e textos */
+.acoesEcompromissos > div:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
 .acoesEcompromissos h2 {
   font-size: 1.3rem;
   color: #2c3e50;
@@ -288,6 +287,21 @@ button:active {
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 1rem;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.acoesEcompromissos > div {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
 }
 
 /* Botão */
@@ -304,6 +318,11 @@ button:active {
 .btn:hover {
   background-color: #9d7df5;
 }
+.btn:focus,
+a:focus {
+  outline: 2px solid #8476d9;
+  outline-offset: 4px;
+}
 
 /* Responsividade para celular */
 @media (max-width: 768px) {
@@ -317,41 +336,36 @@ button:active {
   }
 }
 
-
-
-.comunidadeFala{
+.comunidadeFala {
+  background-color: #f9fbfc;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 6rem;
-  
-  
+  padding-top: 5rem;
 }
 
-.comunidadeFala .container-cards{
-  
+.comunidadeFala .container-cards {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
   justify-content: center;
   width: 350px;
-  
+  padding-top: 1.5rem;
 }
 
-.comunidadeFala h2{
-  margin-top: 5rem;
+.comunidadeFala h2 {
+  
   font-size: 40px;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  
 }
-.comunidadeFala h4{
+.comunidadeFala h4 {
   margin-top: 1rem;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -363,33 +377,175 @@ button:active {
   text-align: justify;
 }
 
-
-.comunidadeFala .container-image{
+.comunidadeFala .container-image {
   width: 200px;
-  height: 200Px;
+  height: 200px;
   border-radius: 50%;
 
   margin: 1rem;
-  
 }
 
-.img1{
-  background-image: url('/src/images/pessoa1.jpg');
+.img1 {
+  background-image: url("/src/images/pessoa1.jpg");
   background-size: cover;
 }
-.img2{
-  background-image: url('/src/images/pessoa1.jpg');
+.img2 {
+  background-image: url("/src/images/pessoa1.jpg");
   background-size: cover;
 }
-.img3{
-  background-image: url('/src/images/pessoa1.jpg');
+.img3 {
+  background-image: url("/src/images/pessoa1.jpg");
   background-size: cover;
 }
-.img4{
-  background-image: url('/src/images/pessoa1.jpg');
+.img4 {
+  background-image: url("/src/images/pessoa1.jpg");
   background-size: cover;
 }
-.img5{
-  background-image: url('/src/images/pessoa1.jpg');
+.img5 {
+  background-image: url("/src/images/pessoa1.jpg");
   background-size: cover;
+}
+
+.formulario {
+  background: linear-gradient(135deg, #eef2f7, #ffffff);
+  padding: 9rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+.container-contato {
+
+  max-width: 400px;
+  font-family: 'Lato', sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.container-contato h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.container-contato p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.container-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container-form label {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.container-form input,
+.container-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.container-form input:focus,
+.container-form textarea:focus {
+  border-color: #8476d9;
+  outline: none;
+}
+
+.container-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn {
+  background-color: #8476d9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #9d7df5;
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .container-form,
+  .container-contato {
+    max-width: 100%;
+  }
+}
+footer {
+  background: linear-gradient(135deg, #eef2f7, #ffffff);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.redesSociais img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.redesSociais img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+h2{
+  color: #2c3e50;
 }
